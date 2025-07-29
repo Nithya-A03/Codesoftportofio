@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Your Name</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #996161;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2.5rem;
+            transition: background 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background: #1a1a1a;
+            color: #d3d3d3;
+        }
+
+        .main-content {
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .welcome {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 1s ease-in;
+        }
+        .welcome h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.2rem;
+            color: #2e4057;
+            margin-bottom: 0; /* Removed space below since no content */
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 0.5s ease-in;
+        }
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            color: #2e4057;
+            border-left: 4px solid #f4a261;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .about-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid #f4a261;
+            transition: transform 0.3s;
+        }
+        .about-img:hover {
+            transform: translateY(-5px);
+        }
+        .skills {
+            margin-top: 1.5rem;
+            padding: 1.2rem;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+        }
+        .skills ul li {
+            background: #f4a261;
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 15px;
+            font-size: 0.95rem;
+        }
+        footer {
+            background: #2e4057;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.9rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <section class="welcome" id="welcome">
+            <h1>Welcome to My Professional Portfolio</h1>
+            <!-- No other content here -->
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="c:\codeSoft\portofilo\img.jpg" alt="Your Professional Photo" class="about-img" />
+                <p>
+                    I am a motivated web development student currently honing my skills in HTML, CSS, and JavaScript.
+                    My goal is to build user-friendly and efficient web applications.
+                </p>
+            </div>
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Communication</li>
+                    <li>Python</li>
+                    <li>C,C++</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume" id="resume">
+            <h2>🧧 Resume</h2>
+            <p><strong>👤Name:</strong> NITHYA A</p>
+            <p><strong>🏘Address:</strong> 3/32,Pothasandhiram Village,Kundhumaranapalli(P).</p>
+            <p><strong>✉Email:</strong> nithya.mca2024@adhiyamaan.in</p>
+            <p><strong>📞Phone:</strong> +91-6380554191</p>
+            <p><strong>🎓Education:</strong> Pursuing MCA in Adhiyamaan College of Engineering,Hosur</p>
+            <p><strong>🛠Skills:</strong> Web Development, Problem Solving, Team Collaboration</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <p><strong>Web Site:</strong> CSI Conference Web site built using Bootstrap<br><strong>Github:</strong><a href="https://github.com/Nithya-A03/NITHYA">Conference Web Site</a></p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> nithya.mca2024@adhiyamaan.in | <strong>Phone:</strong> +91-6380554191</p>
+            <p>Available for collaboration or inquiries. Let's connect!</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 NITHYA A | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
